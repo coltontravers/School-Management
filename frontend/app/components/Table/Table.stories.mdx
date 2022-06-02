@@ -1,0 +1,42 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+import { Table } from "./Table.tsx";
+
+<Meta title="Table" component={Table} />
+
+export const mockColumns = [
+  {
+    Header: "Name",
+    accessor: "name",
+  },
+  {
+    Header: "Class",
+    accessor: "class",
+  },
+  {
+    Header: "Last Modified",
+    accessor: "lastModified",
+  },
+];
+
+export const mockData = [
+  {
+    name: "Colton Travers",
+    class: "English",
+    lastModified: "08/22/2022",
+  },
+  {
+    name: "Colton Travers",
+    class: "English",
+    lastModified: "08/22/2022",
+  },
+];
+
+<Canvas>
+  <Story name="default">
+    <Table columns={mockColumns} data={mockData} />
+  </Story>
+</Canvas>
+
+## Props
+
+<Props of={Table} />

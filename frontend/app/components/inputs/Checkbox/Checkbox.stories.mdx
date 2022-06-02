@@ -1,0 +1,20 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+import { Checkbox } from "./Checkbox.tsx";
+
+<Meta title="Checkbox" component={Checkbox} />
+
+<Canvas>
+  <Story name="default">
+    <Checkbox label="checkbox" />
+  </Story>
+  <Story name="checked">
+    <Checkbox checked label="checkbox" />
+  </Story>
+  <Story name="error">
+    <Checkbox error label="checkbox" />
+  </Story>
+</Canvas>
+
+## Props
+
+<Props of={Checkbox} />

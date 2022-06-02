@@ -1,0 +1,19 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+import { Tabs } from "./Tabs.tsx";
+
+<Meta title="Tabs" component={Tabs} />
+
+<Canvas>
+  <Story name="default">
+    <Tabs
+      tabs={[
+        { value: "home", label: "Home" },
+        { value: "sign-in", label: "Sign in" },
+      ]}
+    />
+  </Story>
+</Canvas>
+
+## Props
+
+<Props of={Tabs} />

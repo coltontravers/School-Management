@@ -1,0 +1,32 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+import { TextInput } from "./TextInput";
+
+<Meta title="Text Input" component={TextInput} />
+
+<Canvas>
+  <Story name="default">
+    <TextInput id="test" label="test" />
+  </Story>
+  <Story name="error">
+    <TextInput id="test" label="test" error />
+  </Story>
+  <Story name="success">
+    <TextInput id="test" label="test" success />
+  </Story>
+  <Story name="helper text">
+    <TextInput id="test" label="test" helperText="hint" />
+  </Story>
+  <Story name="helper text error">
+    <TextInput id="test" label="test" helperText="error" error />
+  </Story>
+  <Story name="helper text success">
+    <TextInput id="test" label="test" helperText="success" success />
+  </Story>
+  <Story name="with icon">
+    <TextInput id="test" label="test" icon="akar-icons:arrow-left" />
+  </Story>
+</Canvas>
+
+## Props
+
+<Props of={TextInput} />

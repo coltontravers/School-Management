@@ -1,0 +1,21 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+import dayjs from "dayjs";
+import { GradeCard } from "./GradeCard.tsx";
+
+<Meta title="GradeCard" component={GradeCard} />
+
+<Canvas>
+  <Story name="default">
+    <GradeCard
+      title="Math test"
+      className="English"
+      teacher="Mrs. Sunderland"
+      grade={90}
+      dateCompleted={dayjs()}
+    />
+  </Story>
+</Canvas>
+
+## Props
+
+<Props of={GradeCard} />

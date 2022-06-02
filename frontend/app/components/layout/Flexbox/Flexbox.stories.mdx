@@ -1,0 +1,17 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+import { Flexbox } from "./Flexbox.tsx";
+
+<Meta title="Flexbox" component={Flexbox} />
+
+<Canvas>
+  <Story name="default">
+    <Flexbox>
+      <span>Some text</span>
+      <span>Some text</span>
+    </Flexbox>
+  </Story>
+</Canvas>
+
+## Props
+
+<Props of={Flexbox} />

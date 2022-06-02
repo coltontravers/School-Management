@@ -1,0 +1,23 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+import { Carousel } from "./Carousel.tsx";
+
+export const imgUrl =
+  "https://i.guim.co.uk/img/media/3aab8a0699616ac94346c05f667b40844e46322f/0_123_5616_3432/master/5616.jpg?width=445&quality=45&auto=format&fit=max&dpr=2&s=cdfeb9fcf58f8dd0d5dcb70ec4fb6673";
+
+<Meta title="Carousel" component={Carousel} />
+
+<Canvas>
+  <Story name="default">
+    <Carousel>
+      <img src={imgUrl} style={{ height: "200px" }} />
+      <img src={imgUrl} style={{ height: "200px" }} />
+      <img src={imgUrl} style={{ height: "200px" }} />
+      <img src={imgUrl} style={{ height: "200px" }} />
+      <img src={imgUrl} style={{ height: "200px" }} />
+    </Carousel>
+  </Story>
+</Canvas>
+
+## Props
+
+<Props of={Carousel} />

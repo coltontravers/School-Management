@@ -1,0 +1,14 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+import { LibraryCard } from "./LibraryCard.tsx";
+
+<Meta title="Library Card" component={LibraryCard} />
+
+<Canvas>
+  <Story name="default">
+    <LibraryCard type="folder" title="This is a folder" />
+  </Story>
+</Canvas>
+
+## Props
+
+<Props of={LibraryCard} />

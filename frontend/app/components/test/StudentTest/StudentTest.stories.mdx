@@ -1,0 +1,33 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+import { StudentTest } from "./StudentTest.tsx";
+import { PageWrapper } from "~/components/layout/PageWrapper";
+import { TestCompleted } from "./TestCompleted.tsx";
+
+<Meta title="Student Test" component={StudentTest} />
+
+export const question = {
+  type: "multiple-choice",
+  description: "Description here",
+  question: "Question here",
+};
+
+export const assignment = {
+  progress: 80,
+};
+
+<Canvas>
+  <Story name="default">
+    <PageWrapper padding={0} fullHeight hideHeader>
+      <StudentTest question={question} assignment={assignment} />
+    </PageWrapper>
+  </Story>
+  <Story name="completed">
+    <PageWrapper padding={0} fullHeight hideHeader>
+      <TestCompleted canSeeResults={true} />
+    </PageWrapper>
+  </Story>
+</Canvas>
+
+## Props
+
+<Props of={StudentTest} />

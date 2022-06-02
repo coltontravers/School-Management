@@ -1,0 +1,14 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+import { AnsweredQuestion } from "./AnsweredQuestion.tsx";
+
+<Meta title="Answered Question" component={AnsweredQuestion} />
+
+<Canvas>
+  <Story name="default">
+    <AnsweredQuestion question="Question here?" type="multiple-choice" />
+  </Story>
+</Canvas>
+
+## Props
+
+<Props of={AnsweredQuestion} />

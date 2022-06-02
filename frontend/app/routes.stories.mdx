@@ -1,0 +1,49 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+import Index from "./routes/index.tsx";
+import NewAssignment from "./routes/newAssignment.tsx";
+import Test from "./routes/test.tsx";
+import Library from "./routes/library.tsx";
+import Messages from "./routes/messages.tsx";
+import MySchool from "./routes/mySchool.tsx";
+import Calendar from "./routes/calendar.tsx";
+import Whiteboard from "./routes/whiteboard.tsx";
+import Grades from "./routes/grades.tsx";
+import { QueryWrapper } from "~/api";
+
+<Meta title="Routes" component={Index} />
+
+<Canvas>
+  <Story name="Index">
+    <Index />
+  </Story>
+  <Story name="NewAssignment">
+    <NewAssignment />
+  </Story>
+  <Story name="Test">
+    <Test />
+  </Story>
+  <Story name="Library">
+    <Library />
+  </Story>
+  <Story name="Messages">
+    <QueryWrapper>
+      <Messages />
+    </QueryWrapper>
+  </Story>
+  <Story name="My School">
+    <MySchool />
+  </Story>
+  <Story name="Calendar">
+    <Calendar />
+  </Story>
+  <Story name="Whiteboard">
+    <Whiteboard />
+  </Story>
+  <Story name="Grades">
+    <Grades />
+  </Story>
+</Canvas>
+
+## Props
+
+<Props of={Index} />

@@ -1,0 +1,14 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+import { ProgressBar } from "./ProgressBar.tsx";
+
+<Meta title="Progress" component={ProgressBar} />
+
+<Canvas>
+  <Story name="default">
+    <ProgressBar progress={80} />
+  </Story>
+</Canvas>
+
+## Props
+
+<Props of={ProgressBar} />

@@ -1,0 +1,25 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+import { RadioGroup } from "./RadioGroup.tsx";
+import { Radio } from "./Radio.tsx";
+
+<Meta title="Radio" component={RadioGroup} />
+
+<Canvas>
+  <Story name="group">
+    <RadioGroup name="test-name">
+      <Radio value="test" label="Option 1" checked />
+      <Radio value="test 2" label="Option 2" />
+      <Radio value="test 3" label="Option 3" />
+    </RadioGroup>
+  </Story>
+  <Story name="single">
+    <Radio value="test" name="Test name" label="Option 1" />
+  </Story>
+  <Story name="error">
+    <Radio value="test" name="Test name" label="Option 1" error />
+  </Story>
+</Canvas>
+
+## Props
+
+<Props of={RadioGroup} />

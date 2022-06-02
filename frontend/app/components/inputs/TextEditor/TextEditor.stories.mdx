@@ -1,0 +1,18 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+import { TextEditor } from "./TextEditor.tsx";
+import { SizeSelector } from "./SizeSelector.tsx";
+
+<Meta title="TextEditor" component={TextEditor} />
+
+<Canvas>
+  <Story name="default">
+    <TextEditor />
+  </Story>
+  <Story name="size selector">
+    <SizeSelector />
+  </Story>
+</Canvas>
+
+## Props
+
+<Props of={TextEditor} />

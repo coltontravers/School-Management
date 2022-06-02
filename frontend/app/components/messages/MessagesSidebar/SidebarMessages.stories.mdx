@@ -1,0 +1,77 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+import { MessagesSidebar } from "./MessagesSidebar.tsx";
+
+<Meta title="Messages Sidebar" component={MessagesSidebar} />
+
+export const groups = {
+  classes: [
+    {
+      type: "class",
+      id: "123",
+      name: "English",
+      latestMessage: {
+        from: "Colton Travers",
+        message: "Here is a message",
+      },
+    },
+    {
+      type: "class",
+      id: "124",
+      name: "Math",
+      latestMessage: {
+        from: "Colton Travers",
+        message: "Here is a message",
+      },
+    },
+  ],
+  groups: [
+    {
+      type: "group",
+      id: "125",
+      name: "Group 1",
+      latestMessage: {
+        from: "Colton Travers",
+        message: "Here is a message",
+      },
+    },
+    {
+      type: "group",
+      id: "126",
+      name: "Group 2",
+      latestMessage: {
+        from: "Colton Travers",
+        message: "Here is a message",
+      },
+    },
+  ],
+  direct: [
+    {
+      type: "direct",
+      id: "127",
+      name: "Mrs. Stevenson",
+      latestMessage: {
+        from: "Colton Travers",
+        message: "Here is a message",
+      },
+    },
+    {
+      type: "direct",
+      id: "128",
+      name: "Mr. Thompson",
+      latestMessage: {
+        from: "Colton Travers",
+        message: "Here is a message",
+      },
+    },
+  ],
+};
+
+<Canvas>
+  <Story name="default">
+    <MessagesSidebar groups={groups} selectedGroup="124" />
+  </Story>
+</Canvas>
+
+## Props
+
+<Props of={MessagesSidebar} />

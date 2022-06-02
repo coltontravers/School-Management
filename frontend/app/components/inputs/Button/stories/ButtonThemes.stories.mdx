@@ -1,0 +1,31 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+import { Button, buttonSizes, buttonThemes } from "../Button";
+
+<Meta title="Button/Themes" component={Button} />
+
+# Button themes
+
+<Canvas>
+  <Story name="primary">
+    <Button>A Primary Button</Button>
+  </Story>
+  <Story name="secondary">
+    <Button tone="secondary">A Secondary Button</Button>
+  </Story>
+  <Story name="success">
+    <Button tone="success">A Success Button</Button>
+  </Story>
+  <Story name="warning">
+    <Button tone="warning">A Warning Button</Button>
+  </Story>
+  <Story name="danger">
+    <Button tone="danger">A Danger Button</Button>
+  </Story>
+  <Story name="ghost">
+    <Button variant="ghost">A Ghost Button</Button>
+  </Story>
+</Canvas>
+
+## Props
+
+<Props of={Button} />

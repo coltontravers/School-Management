@@ -1,0 +1,17 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+import { WhiteboardCanvas } from "./WhiteboardCanvas.tsx";
+import { WhiteboardProvider } from "./context/context.tsx";
+
+<Meta title="Whiteboard Canvas" component={WhiteboardCanvas} />
+
+<Canvas>
+  <Story name="default">
+    <WhiteboardProvider>
+      <WhiteboardCanvas />
+    </WhiteboardProvider>
+  </Story>
+</Canvas>
+
+## Props
+
+<Props of={WhiteboardCanvas} />

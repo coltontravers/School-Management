@@ -1,0 +1,27 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+import { Button, buttonSizes, buttonThemes } from "../Button";
+
+<Meta title="Button/Sizes" component={Button} />
+
+# Button sizes
+
+<Canvas>
+  <Story name="small">
+    <Button size="small">Small</Button>
+  </Story>
+  <Story name="medium">
+    <Button size="medium">Medium</Button>
+  </Story>
+  <Story name="large">
+    <Button size="large">Large</Button>
+  </Story>
+  <Story name="full width">
+    <Button size="large" fullWidth>
+      Full width
+    </Button>
+  </Story>
+</Canvas>
+
+## Props
+
+<Props of={Button} />

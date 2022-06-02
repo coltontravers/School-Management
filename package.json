@@ -1,0 +1,15 @@
+{
+  "name": "school-remix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cd frontend && remix dev",
+    "start": "cd frontend && remix-serve build",
+    "storybook": "cd frontend && start-storybook -p 6006",
+    "build-storybook": "cd frontend && build-storybook"
+  },
+  "author": "",
+  "license": "ISC"
+}

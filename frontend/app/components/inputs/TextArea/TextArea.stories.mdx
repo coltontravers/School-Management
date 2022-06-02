@@ -1,0 +1,32 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+import { TextArea } from "./TextArea";
+
+<Meta title="Text Area" component={TextArea} />
+
+<Canvas>
+  <Story name="default">
+    <TextArea id="test" label="test" />
+  </Story>
+  <Story name="error">
+    <TextArea id="test" label="test" error />
+  </Story>
+  <Story name="success">
+    <TextArea id="test" label="test" success />
+  </Story>
+  <Story name="helper text">
+    <TextArea id="test" label="test" helperText="hint" />
+  </Story>
+  <Story name="helper text error">
+    <TextArea id="test" label="test" helperText="error" error />
+  </Story>
+  <Story name="helper text success">
+    <TextArea id="test" label="test" helperText="success" success />
+  </Story>
+  <Story name="with icon">
+    <TextArea id="test" label="test" icon="akar-icons:arrow-left" />
+  </Story>
+</Canvas>
+
+## Props
+
+<Props of={TextArea} />

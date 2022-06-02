@@ -1,0 +1,30 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+import { boolean } from "@storybook/addon-controls";
+import { Button, buttonSizes, buttonThemes } from "../Button";
+
+<Meta title="Button" component={Button} />
+
+# Loading
+
+<Canvas>
+  <Story name="loading">
+    <Button loading={boolean("loading", true)}>Loading</Button>
+  </Story>
+</Canvas>
+
+# Disabled
+
+<Canvas>
+  <Story name="disabled">
+    <Button
+      disabled={boolean("disabled", true)}
+      style={{ minWidth: "200px!important" }}
+    >
+      A Disabled Button
+    </Button>
+  </Story>
+</Canvas>
+
+## Props
+
+<Props of={Button} />

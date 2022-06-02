@@ -1,0 +1,21 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+import { Modal } from "./Modal.tsx";
+import { ModalFooter } from "./ModalFooter.tsx";
+import { Button } from "../inputs/Button/Button.tsx";
+
+<Meta title="Modal" component={Modal} />
+
+<Canvas>
+  <Story name="default">
+    <Modal open>
+      Stuff
+      <ModalFooter>
+        <Button>Click me</Button>
+      </ModalFooter>
+    </Modal>
+  </Story>
+</Canvas>
+
+## Props
+
+<Props of={Modal} />

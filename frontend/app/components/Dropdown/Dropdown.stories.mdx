@@ -1,0 +1,24 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+import Dropdown from "./Dropdown.tsx";
+import DropdownItem from "./DropdownItem.tsx";
+
+<Meta title="Dropdown" component={Dropdown} />
+
+<Canvas>
+  <Story name="default">
+    <Dropdown label="dropdown">
+      <DropdownItem>Item 1</DropdownItem>
+      <DropdownItem>Item 2</DropdownItem>
+    </Dropdown>
+  </Story>
+  <Story name="small">
+    <Dropdown size="small" label="dropdown">
+      <DropdownItem>Item 1</DropdownItem>
+      <DropdownItem>Item 2</DropdownItem>
+    </Dropdown>
+  </Story>
+</Canvas>
+
+## Props
+
+<Props of={Dropdown} />

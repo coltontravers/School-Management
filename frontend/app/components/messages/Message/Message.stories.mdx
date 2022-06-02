@@ -1,0 +1,26 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+import { Message } from "./Message.tsx";
+
+<Meta title="Message" component={Message} />
+
+<Canvas>
+  <Story name="default">
+    <Message
+      from="Colton Travers"
+      message="This is some boilerplate text here. And some more. How long will it
+          go? Nobody knows, but it's getting alittle long now. Ahhhh it's
+          getting pretty long."
+    />
+    <Message
+      from="Colton Travers"
+      message="This is some boilerplate text here. And some more. How long will it
+          go? Nobody knows, but it's getting alittle long now. Ahhhh it's
+          getting pretty long."
+      fromMe
+    />
+  </Story>
+</Canvas>
+
+## Props
+
+<Props of={Message} />
